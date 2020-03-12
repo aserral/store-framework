@@ -2,7 +2,7 @@
   "store.home": {
     "blocks": [
       "flex-layout.row",
-      "shelf"
+      "vtex.shelf@1.x:shelf#shelf"
     ]
   },
   "flex-layout.row": {
