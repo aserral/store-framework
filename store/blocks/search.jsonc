@@ -28,6 +28,17 @@
     "blocks": ["search-result-layout.desktop"]
   },
   "search-result-layout.desktop": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "facetsBehavior": "Dynamic",
+        "maxItemsPerPage": 8,
+        "queryField": "clothing",
+        "mapField": "c",
+        "skusFilter": "FIRST_AVAILABLE"
+      }
+    },
     "blocks": [
       "breadcrumb.search",
       "search-title.v2",
