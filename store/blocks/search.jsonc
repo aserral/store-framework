@@ -1,12 +1,14 @@
-{
-  "store.search": {
-     "blocks": ["search-result","search-result-layout"]
-  },
-  "search-result-layout": {
-     "blocks": [
-        "search-result-layout.desktop",
-        "search-result-layout.mobile",
-        "search-not-found-layout"
-     ]
-  }
- }
+{"store.search": {
+  "blocks": [
+    "search-result-layout"
+  ],
+  "props": {
+      "context": {
+         "orderByField": "OrderByReleaseDateDESC",
+          "hideUnavailableItems": true,
+          "facetsBehavior": "Dynamic",
+          "maxItemsPerPage": 8,
+          "skusFilter": "FIRST_AVAILABLE"
+      }
+   }
+}
