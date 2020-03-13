@@ -27,7 +27,7 @@
     "tab-list.item#home1": {
         "props": {
             "tabId": "about",
-            "label": "\"About\"",
+            "label": "About",
             "defaultActiveTab": true
         }
     },
@@ -35,7 +35,7 @@
     "tab-list.item#home2": {
         "props": {
             "tabId": "electronics",
-            "label": "Electronics"
+            "label": "About",
         }
     },
 
