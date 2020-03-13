@@ -23,7 +23,7 @@
       "pagination": "show-more",
       "preventRouteChange" : true
     },
-    "blocks": [
+    "children": [
       "breadcrumb.search",
       "search-title.v2",
       "total-products.v2",
