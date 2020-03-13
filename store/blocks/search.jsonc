@@ -1,4 +1,5 @@
-{"store.search": {
+{
+  "store.search": {
   "blocks": [
     "search-result-layout"
   ],
@@ -10,5 +11,8 @@
           "maxItemsPerPage": 8,
           "skusFilter": "FIRST_AVAILABLE"
       }
+   },
+   "search-result-layout": {
+     
    }
-}
+},
