@@ -5,33 +5,66 @@
     ]
   },
 
+  "search-content": { 
+    "blocks": [
+      "gallery", 
+      "not-found"
+    ] 
+  },
+
+  "gallery": { 
+    "blocks": [
+      "product-summary.shelf"
+    ] 
+  },
+
   "search-result-layout": {
     "blocks": ["search-result-layout.desktop"]
   },
 
   "search-result-layout.desktop": {
     "props": {
-      "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "facetsBehavior": "Dynamic",
-        "maxItemsPerPage": 8,
-        "queryField": "clothing",
-        "mapField": "c",
-        "skusFilter": "FIRST_AVAILABLE"
-      },
       "pagination": "show-more",
       "preventRouteChange" : true
     },
     "children": [
       "breadcrumb.search",
       "search-title.v2",
-      "total-products.v2",
-      "order-by.v2",
+      "flex-layout.row#top",
       "search-fetch-previous",
-      "search-content",
-      "filter-navigator.v3",
+      "flex-layout.row#results",
       "search-fetch-more"
+    ]
+  },
+
+  "flex-layout.row#top": { 
+    "children":[
+      "total-products.v2", 
+      "order-by.v2"
+    ]
+  },  
+  "flex-layout.row#results": { 
+    "children": [ 
+      "flex-layout.col#filter", 
+      "flex-layout.col#search" 
+    ]
+  },
+
+  "flex-layout.col#filter": { 
+    "props": {
+      "width": "20%"
+    },
+    "children":[
+      "filter-navigator.v3"
+    ]
+  },  
+
+  "flex-layout.col#search": { 
+    "props": {
+      "width": "80%"
+    },
+    "children":[
+      "search-content"
     ]
   }
 }
