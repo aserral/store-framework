@@ -26,5 +26,31 @@
       },
       "pagination": "show-more"
     }
+  },
+  "search-result-layout.desktop": {
+    "blocks": [
+      "breadcrumb.search",
+      "search-title.v2",
+      "total-products.v2",
+      "order-by.v2",
+      "search-fetch-previous",
+      "search-content",
+      "filter-navigator.v3",
+      "search-fetch-more"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 2,
+        "orderByField": "OrderByReleaseDateDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": []
+        }
+      },
+      "pagination": "show-more"
+    }
   }
 }
