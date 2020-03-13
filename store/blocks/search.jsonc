@@ -10,21 +10,11 @@
             "facetsBehavior": "Dynamic",
             "maxItemsPerPage": 8,
             "skusFilter": "FIRST_AVAILABLE"
-        }
+        },
+        "pagination": "show-more"
     }
   },
   "search-result-layout": {
-    "props": {
-      "querySchema": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "facetsBehavior": "Dynamic",
-        "maxItemsPerPage": 8,
-        "queryField": "clothing",
-        "mapField": "c",
-        "skusFilter": "FIRST_AVAILABLE"
-      }
-    },
     "blocks": ["search-result-layout.desktop"]
   },
   "search-result-layout.desktop": {
