@@ -27,7 +27,7 @@
     "tab-list.item#home1": {
         "props": {
             "tabId": "about",
-            "label": "Our history",
+            "label": "about",
             "defaultActiveTab": true
         }
     },
