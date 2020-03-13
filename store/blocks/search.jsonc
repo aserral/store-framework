@@ -6,12 +6,11 @@
     "props": {
         "context": {
           "orderByField": "OrderByReleaseDateDESC",
-            "hideUnavailableItems": true,
-            "facetsBehavior": "Dynamic",
-            "maxItemsPerPage": 8,
-            "skusFilter": "FIRST_AVAILABLE"
-        },
-        "pagination": "show-more"
+          "hideUnavailableItems": true,
+          "facetsBehavior": "Dynamic",
+          "maxItemsPerPage": 8,
+          "skusFilter": "FIRST_AVAILABLE"
+        }
     }
   },
   "search-result-layout": {
@@ -27,7 +26,9 @@
         "queryField": "clothing",
         "mapField": "c",
         "skusFilter": "FIRST_AVAILABLE"
-      }
+      },
+      "pagination": "show-more",
+      "preventRouteChange" : true
     },
     "blocks": [
       "breadcrumb.search",
