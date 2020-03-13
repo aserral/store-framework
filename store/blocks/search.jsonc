@@ -1,5 +1,30 @@
 {
   "store.search": {
-    "blocks": []
+    "blocks": ["search-result"]
+  },
+  "search-result": {
+    "blocks": [
+      "filter-navigator.v2",
+      "gallery",
+      "not-found",
+      "breadcrumb",
+      "order-by",
+      "total-products",
+      "search-title"
+    ],
+    "props": {
+      "context": {
+        "maxItemsPerPage": 2,
+        "orderByField": "OrderByReleaseDateDESC"
+      },
+      "hiddenFacets": {
+        "layoutMode1": "normal",
+        "layoutMode2": "small",
+        "specificationFilters": {
+          "hiddenFilters": []
+        }
+      },
+      "pagination": "show-more"
+    }
   }
 }
