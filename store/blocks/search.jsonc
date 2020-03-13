@@ -1,18 +1,30 @@
 {
   "store.search": {
-  "blocks": [
-    "search-result-layout"
-  ],
-  "props": {
-      "context": {
-         "orderByField": "OrderByReleaseDateDESC",
-          "hideUnavailableItems": true,
-          "facetsBehavior": "Dynamic",
-          "maxItemsPerPage": 8,
-          "skusFilter": "FIRST_AVAILABLE"
+    "blocks": [
+      "search-result-layout"
+    ],
+    "props": {
+        "context": {
+          "orderByField": "OrderByReleaseDateDESC",
+            "hideUnavailableItems": true,
+            "facetsBehavior": "Dynamic",
+            "maxItemsPerPage": 8,
+            "skusFilter": "FIRST_AVAILABLE"
+        }
+    }
+  },
+  "search-result-layout": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "facetsBehavior": "Dynamic",
+        "maxItemsPerPage": 8,
+        "queryField": "clothing",
+        "mapField": "c",
+        "skusFilter": "FIRST_AVAILABLE"
       }
-   },
-   "search-result-layout": {
-     
-   }
-},
+    },
+    "blocks": ["search-result-layout.desktop"]
+  }
+}
